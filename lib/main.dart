@@ -52,19 +52,6 @@ class _MyAppState extends State<MyApp> with TickerProviderStateMixin {
     });
   }
 
-  void showSnackbarDemo(){
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: const Text('Yay! A SnackBar!'),
-      action: SnackBarAction(
-        label: 'Undo',
-        onPressed: () {
-          // Some code to undo the change.
-        },
-      ),
-    ));
-  }
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
